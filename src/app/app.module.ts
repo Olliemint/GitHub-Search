@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserreposComponent } from './userrepos/userrepos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserreposService } from './userrepos.service';
+import { UserprofilesService } from './userprofiles.service';
+
+
 
 @NgModule({
   declarations: [
@@ -14,9 +19,14 @@ import { UserreposComponent } from './userrepos/userrepos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
-  providers: [],
+  providers: [
+    UserprofilesService,
+    UserreposService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

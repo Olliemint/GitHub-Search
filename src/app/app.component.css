@@ -1,0 +1,17 @@
+/* header styling */
+.header{
+    width: 100%;
+    background-color: #3C4043;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.header h1{
+    color: #ffffff;
+    font-weight: 700;
+    
+    
+    
+}

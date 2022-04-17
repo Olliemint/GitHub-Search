@@ -1,1 +1,7 @@
-<p>userrepos works!</p>
+<div>
+    <li *ngFor="let repo of repos">
+        <p>{{repo.name}}</p>
+        <p>{{repo.description}}</p>
+        <p>{{repo.forks}}</p>
+    </li>
+</div>

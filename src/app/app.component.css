@@ -20,7 +20,18 @@
     text-decoration-thickness: 10px;
 }
 .sections{
-    background-color: aquamarine;
-    height: 30vh;
+    height: 85vh;
+    
     display: flex;
+}
+#left,#right{
+    background-color: #000000;
+}
+.myform{
+    
+    height: 20vh;
+    background-image: linear-gradient(to bottom , #0E213A, #0A1820);
+}
+#middle{
+    background-color: #121212;
 }

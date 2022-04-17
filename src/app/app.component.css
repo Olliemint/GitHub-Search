@@ -1,5 +1,5 @@
 /* header styling */
-.header{
+#header{
     width: 100%;
     background-color: #3C4043;
     height: 10vh;
@@ -8,10 +8,14 @@
     align-items: center;
    
 }
-.header h1{
-    color: #ffffff;
+#header h1{
+    color: rgb(15, 240, 240);
     font-weight: 700;
-    
-    
-    
+    font-size: 50px;
+}
+#header span{
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgb(15, 240, 240);
+    text-decoration-thickness: 10px;
 }

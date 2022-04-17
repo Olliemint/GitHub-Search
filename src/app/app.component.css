@@ -1,8 +1,8 @@
 /* header styling */
 #header{
     width: 100%;
-    background-color: #3C4043;
-    height: 10vh;
+    background-color: #2C2C2C;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,4 +18,9 @@
     text-decoration: underline;
     text-decoration-color: rgb(15, 240, 240);
     text-decoration-thickness: 10px;
+}
+.sections{
+    background-color: aquamarine;
+    height: 30vh;
+    display: flex;
 }

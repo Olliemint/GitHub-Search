@@ -8,6 +8,7 @@ import { UserreposComponent } from './userrepos/userrepos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserreposService } from './userrepos.service';
 import { UserprofilesService } from './userprofiles.service';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 
 
@@ -15,7 +16,8 @@ import { UserprofilesService } from './userprofiles.service';
   declarations: [
     AppComponent,
     UserprofileComponent,
-    UserreposComponent
+    UserreposComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,

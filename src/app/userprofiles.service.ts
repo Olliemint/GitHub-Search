@@ -6,17 +6,18 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserprofilesService {
+  Profile: string;
 
-  profiles = "Olliemint"
+  
 
   constructor(private httpprofile: HttpClient) { 
-    console.log('hello');
+    this.Profile ='Olliemint'
     
   }
 
       myProfile(profiles:string):any{
         const promise1 = new Promise ((resolve, reject)=>{
-          resolve(this.httpprofile.get(`https://api.github.com/users/${profiles}`).toPromise());
+          resolve(this.httpprofile.get(`https://api.github.com/users/${this.Profile}`).toPromise());
         });
 
         return promise1

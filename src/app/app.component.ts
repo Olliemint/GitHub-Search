@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 // import { SearchFormComponent } from './search-form/search-form.component';
-// import { UserprofilesService } from './userprofiles.service';
+import { UserprofilesService } from './userprofiles.service';
 import { UserreposService } from './userrepos.service';
 
 
@@ -17,9 +17,11 @@ export class AppComponent {
 
   repos: any = []
 
+  Profile: any =[]
+
   name = new FormControl()
 
-  constructor(private reposservice: UserreposService) {
+  constructor(private reposservice: UserreposService, private profileservice: UserprofilesService) {
 
     
     
@@ -29,6 +31,7 @@ export class AppComponent {
   ngOnInit(): void {
 
     this.getRepos('Olliemint')
+    this.myProfile('Olliemint')
   }
 
   async getRepos(myfieldn:string):Promise<void>{
@@ -40,11 +43,22 @@ export class AppComponent {
     console.log(this.repos);
     
   }
+  async myProfile(myfieldn:string): Promise<void>{
+     
+     
+    const profileData = await this.profileservice.myProfile(myfieldn);
+
+    this.Profile = profileData
+
+    // console.log(this.Profile);
+    
+  }
 
   getusername(){
    let myfieldn = this.name.value
 
    this.getRepos(myfieldn)
+   this.myProfile(myfieldn)
 
 console.log(myfieldn);
 

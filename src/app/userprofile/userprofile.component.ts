@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserprofilesService } from '../userprofiles.service';
 import { ProfileClass } from '../profile-class';
+import { FormControl } from '@angular/forms';
+
 
 
 
@@ -12,11 +14,15 @@ import { ProfileClass } from '../profile-class';
 })
 export class UserprofileComponent implements OnInit {
 
+  name= new FormControl()
+
   Profile: any =[]
-  user!: ProfileClass;
+  name2!: string
+  // user!: ProfileClass;
 
   constructor(public profileservice: UserprofilesService) {
-    this.user = new ProfileClass ('',0);
+    // this.user = new ProfileClass ('',0);
+   
     
     
    }
@@ -24,16 +30,19 @@ export class UserprofileComponent implements OnInit {
 
 
   ngOnInit(): void {
-      this.myProfile()
-      interface Apiresponse{
-        bio:string,
-        followers:number
+      
+      
+      // interface Apiresponse{
+      //   bio:string,
+      //   followers:number
      
-      }
+      // }
   }
   
-   async myProfile(): Promise<void>{
-     const profileData = await this.profileservice.myProfile(this.Profile);
+   async myProfile(username:string): Promise<void>{
+     
+     
+     const profileData = await this.profileservice.myProfile(username);
 
      this.Profile = profileData
 
@@ -41,4 +50,15 @@ export class UserprofileComponent implements OnInit {
      
    }
 
+   getname(){
+    let username = this.name.value
+    this.myProfile(username)
+    // const fetchname = this.name.value
+    
+
+     return false;
+     
+   }
+
+   
 }

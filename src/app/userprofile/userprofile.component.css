@@ -2,7 +2,7 @@
     display: flex; 
     justify-content: center;
 }
-.icon1 {
+/* .icon1 {
   
    height: 160px;
    width: 160px;
@@ -10,12 +10,12 @@
    border-radius: 50%;
    position: relative;
    top: 10%;
-}
+} */
 .icon1 img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
    
     
 }

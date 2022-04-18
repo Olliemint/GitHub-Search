@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 // import { SearchFormComponent } from './search-form/search-form.component';
 // import { UserprofilesService } from './userprofiles.service';
 import { UserreposService } from './userrepos.service';
@@ -16,6 +17,8 @@ export class AppComponent {
 
   repos: any = []
 
+  name = new FormControl()
+
   constructor(private reposservice: UserreposService) {
 
     
@@ -25,17 +28,27 @@ export class AppComponent {
 
   ngOnInit(): void {
 
-    this.getRepos()
+    this.getRepos('Olliemint')
   }
 
-  async getRepos():Promise<void>{
+  async getRepos(myfieldn:string):Promise<void>{
 
-    const Repos = await this.reposservice.myRepos("Olliemint");
+    const Repos = await this.reposservice.myRepos(myfieldn);
 
     this.repos = Repos
 
     console.log(this.repos);
     
+  }
+
+  getusername(){
+   let myfieldn = this.name.value
+
+   this.getRepos(myfieldn)
+
+console.log(myfieldn);
+
+   return false;
   }
 
 

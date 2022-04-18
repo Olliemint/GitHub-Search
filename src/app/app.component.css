@@ -34,6 +34,7 @@
 }
 #middle{
     background-color: #121212;
+    overflow: hidden;
 }
 .footer{
     background-color: #181818;
@@ -41,4 +42,7 @@
 }
 #backgg{
     background-color: #121212;
+}
+.repos{
+    
 }

@@ -6,6 +6,9 @@ import { FormControl } from '@angular/forms';
 
 
 
+
+
+
 @Component({
   selector: 'app-userprofile',
   templateUrl: './userprofile.component.html',
@@ -17,7 +20,8 @@ export class UserprofileComponent implements OnInit {
   name= new FormControl()
 
   Profile: any =[]
-  name2!: string
+  // name2!: string
+  // public username = 'Olliemint'
   // user!: ProfileClass;
 
   constructor(public profileservice: UserprofilesService) {
@@ -31,7 +35,7 @@ export class UserprofileComponent implements OnInit {
 
   ngOnInit(): void {
       
-      
+      this.myProfile('Olliemint')
       // interface Apiresponse{
       //   bio:string,
       //   followers:number
@@ -59,6 +63,8 @@ export class UserprofileComponent implements OnInit {
      return false;
      
    }
+
+ 
 
    
 }

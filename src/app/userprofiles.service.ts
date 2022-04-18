@@ -14,7 +14,7 @@ export class UserprofilesService {
  
   
 
-  constructor(private httpprofile: HttpClient) { 
+  constructor(private httpprofile: HttpClient, private httprep: HttpClient) { 
     this.profiles ='Olliemint'
     
     

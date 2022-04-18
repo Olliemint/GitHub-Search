@@ -29,7 +29,7 @@ export class UserreposComponent implements OnInit {
 
     this.repos = Repos
 
-    console.log(this.repos);
+    // console.log(this.repos);
     
   }
 

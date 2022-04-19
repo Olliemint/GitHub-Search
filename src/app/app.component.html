@@ -8,6 +8,23 @@
        <div class="img1">
          <img src="{{Profile.avatar_url}}" alt="">
        </div>
+       <div class="login">
+         <p>{{Profile.login}}</p>
+       </div>
+       <div class="bio">
+         <p>{{Profile.bio}}</p>
+       </div>
+       <div class="followers">
+         <p><i class="fa-solid fa-user-group" style="color: #ffffff;"></i></p>
+         <p> {{Profile.followers}} <span>followers</span></p>
+         <p> {{Profile.following}} <span>following</span></p>
+       </div>
+       <div class="others">
+         <p> Location: {{Profile.location}}</p>
+         <p> Company: {{Profile.company}}</p>
+         <p>Twitter: {{Profile.twitter_username}}</p>
+         <p>Email: {{Profile.email}}</p>
+       </div>
 
     </div>
     <div class="card" style="width: 70%;" id="middle">

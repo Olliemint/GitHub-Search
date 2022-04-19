@@ -46,7 +46,10 @@
 .img1{
     display: flex;
     justify-content: center;
+    position: relative;
+    margin-top: 30px;
 }
+      /* user profile side */
 .img1 img{
     height: 150px;
     width: 150px;
@@ -54,4 +57,32 @@
     position: relative;
     margin-top: 40px;
     
+}
+.login{
+    display: flex;
+    justify-content: center;
+    
+}
+.login p{
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    margin-top: 20px;
+}
+.followers{
+    display: flex;
+    gap: 2%;
+}
+.followers p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.bio{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.others p{
+    color: #ffffff;
 }

@@ -5,18 +5,20 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class CardHighlightDirective {
 
-  constructor(private elem: ElementRef) { }
+  constructor(private hover: ElementRef) { }
+
+  private hovercolor(color: string) {
+    this.hover.nativeElement.style.backgroundColor = color;
+  }
   
   @HostListener('mouseover') onMouseEnter() {
-    this.highlight('#408754'); 
+    this.hovercolor('#408754'); 
   }
 
   @HostListener('mouseout') onMouseLeave() {
-    this.highlight(null!); 
+    this.hovercolor(null!); 
   }
 
-  private highlight(color: string) {
-    this.elem.nativeElement.style.backgroundColor = color;
-  }
+ 
 
 }

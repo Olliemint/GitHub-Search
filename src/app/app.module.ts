@@ -11,6 +11,7 @@ import { UserprofilesService } from './userprofiles.service';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardHighlightDirective } from './card-highlight.directive';
+import { DaysCountPipe } from './days-count.pipe';
 
 
 
@@ -20,7 +21,8 @@ import { CardHighlightDirective } from './card-highlight.directive';
     UserprofileComponent,
     UserreposComponent,
     SearchFormComponent,
-    CardHighlightDirective
+    CardHighlightDirective,
+    DaysCountPipe
   ],
   imports: [
     BrowserModule,

@@ -143,6 +143,10 @@ input{
     justify-content: space-around;
     
 }
+.days p{
+    color: #ffffff;
+    text-align: center;
+}
 
 .footer p{
     color: aqua;

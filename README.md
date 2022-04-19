@@ -2,7 +2,7 @@
 
 ##### By Oliver Maiyo
 
-<img width="1440" alt="Landing page" src="https://raw.githubusercontent.com/Olliemint/Quote-Medium/main/src/assets/quotebg.png">
+<img width="1440" alt="Landing page" src="https://raw.githubusercontent.com/Olliemint/GitHub-Search/main/src/assets/gitsearch%20landing.png">
 
 ## Table of Content
 + [Description](#description)

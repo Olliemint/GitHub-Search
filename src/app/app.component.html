@@ -31,16 +31,17 @@
         <div class="myform">
           <form (submit)="getusername()">
             <label for="name">Name: </label><br>
-            <input id="name" type="text" [formControl]="name"><br>
-            
+            <input id="name" type="text" [formControl]="name" placeholder="e.g Olliemint"><br>
+            <div class="mybutton">
             <button type="submit" class="btn btn-success">Search</button><br>
+          </div>
             
             </form>
 
         </div>
 
         <div class="repos">
-          <div class="card" style="width: 18rem;" id="cardrepo" *ngFor="let repo of repos">
+          <div class="card" style="width: 24rem;" id="cardrepo" *ngFor="let repo of repos">
             <div class="card-body">
               <div class="link">
               <a href="{{repo.html_url}} " target="_blank" class="card-link">{{repo.name}}</a>
@@ -51,8 +52,10 @@
 
             <div class="combo">
               <p>{{repo.language}}</p>
+              <div class="starfork">
               <p><i class="fa-solid fa-star" style="color: #ffffff;"></i> <span> {{repo.stargazers_count}} </span></p>
               <p><i class="fa-solid fa-code-fork" style="color: #ffffff;"></i> <span>{{repo.forks_count}}</span></p>
+            </div>
             </div>
              
               
@@ -70,7 +73,7 @@
 
   </div>
   <div class="footer">
-
+      <p>©MintTech Solutions 2022 . All rights reserved.</p>
   </div>
 
 </div>

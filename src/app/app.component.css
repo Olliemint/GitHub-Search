@@ -31,11 +31,27 @@
     
     height: 20vh;
     background-image: linear-gradient(to bottom , #0E213A, #0A1820);
+    display: grid;
+    place-content: center;
+    
+}
+input{
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    width: 250px;
+    
+}
+.mybutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .footer{
     background-color: #181818;
     height: 4vh;
+    
+    align-items: center;
 }
 #backgg{
     background-color: #121212;
@@ -104,8 +120,28 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 .desc p{
     color: #fcfc;
     font-weight: 700;
+}
+.combo{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+   
+}
+.starfork{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer p{
+    color: aqua;
+    text-align: center;
+    margin-top: 15px;
 }

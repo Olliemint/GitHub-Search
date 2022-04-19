@@ -12,7 +12,7 @@ export class DaysCountPipe implements PipeTransform {
       const interval: any = {
         Year: 31536000,
         Month: 2592000,
-        Week: 604800,
+        Weeks: 604800,
         Days: 86400,
         Hour: 3600,
         Minute: 60,

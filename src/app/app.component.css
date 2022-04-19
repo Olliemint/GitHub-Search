@@ -32,10 +32,7 @@
     height: 20vh;
     background-image: linear-gradient(to bottom , #0E213A, #0A1820);
 }
-#middle{
-    background-color: #121212;
-    overflow: hidden;
-}
+
 .footer{
     background-color: #181818;
     height: 4vh;
@@ -85,4 +82,30 @@
 }
 .others p{
     color: #ffffff;
+}
+       /* middle section styling */
+ #middle{
+        background-color: #121212;
+        overflow: scroll;
+    }
+.repos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-left: 2%;
+    
+    margin-top: 3%;
+}
+#cardrepo{
+    margin: 5px;
+    background-color: #0A192F;
+}
+.link a{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+}
+.desc p{
+    color: #fcfc;
+    font-weight: 700;
 }

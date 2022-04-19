@@ -40,13 +40,16 @@
         </div>
 
         <div class="repos">
-          <div class="card" style="width: 18rem;" *ngFor="let repo of repos">
+          <div class="card" style="width: 18rem;" id="cardrepo" *ngFor="let repo of repos">
             <div class="card-body">
-              <h5 class="card-title">{{repo.name}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">{{Profile.login}}</a>
+              <div class="link">
+              <a href="{{repo.html_url}} " target="_blank" class="card-link">{{repo.name}}</a>
+            </div>
+            <div class="desc">
+              <p>{{repo.description}}</p>
+            </div>
+             
+              
             </div>
           </div>
         </div>

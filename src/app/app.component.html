@@ -41,7 +41,7 @@
         </div>
 
         <div class="repos">
-          <div class="card" style="width: 24rem;" id="cardrepo" *ngFor="let repo of repos">
+          <div appCardHighlight class="card" style="width: 24rem;" id="cardrepo" *ngFor="let repo of repos">
             <div class="card-body">
               <div class="link">
               <a href="{{repo.html_url}} " target="_blank" class="card-link">{{repo.name}}</a>

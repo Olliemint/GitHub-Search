@@ -10,6 +10,7 @@ import { UserreposService } from './userrepos.service';
 import { UserprofilesService } from './userprofiles.service';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CardHighlightDirective } from './card-highlight.directive';
 
 
 
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     UserprofileComponent,
     UserreposComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    CardHighlightDirective
   ],
   imports: [
     BrowserModule,

@@ -31,16 +31,18 @@
         <div class="myform">
           <form (submit)="getusername()">
             <label for="name">Name: </label><br>
-            <input id="name" type="text" [formControl]="name" placeholder="e.g Olliemint"><br>
+            <input id="name" type="text" [formControl]="name" placeholder="Enter your GitHub Username"><br>
             <div class="mybutton">
             <button type="submit" class="btn btn-success">Search</button><br>
           </div>
             
             </form>
+           
 
         </div>
 
         <div class="repos">
+          
           <div appCardHighlight class="card" style="width: 24rem;" id="cardrepo" *ngFor="let repo of repos">
             <div class="card-body">
               <div class="link">
@@ -69,6 +71,7 @@
         
     </div>
     <div class="card" style="width: 15%;" id="right">
+     
         <div class="logins">
           <p class="dropdown"><i class="fa-solid fa-bell fa-2x" style="color: #ffffff;"></i></p>
           <div class="dropdown">

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 // import { SearchFormComponent } from './search-form/search-form.component';
 import { UserprofilesService } from './userprofiles.service';
 import { UserreposService } from './userrepos.service';
@@ -19,7 +19,7 @@ export class AppComponent {
 
   Profile: any =[]
 
-  name = new FormControl()
+  name = new FormControl('',Validators.required)
 
   constructor(private reposservice: UserreposService, private profileservice: UserprofilesService) {
 
@@ -32,6 +32,7 @@ export class AppComponent {
 
     this.getRepos('Olliemint')
     this.myProfile('Olliemint')
+    
   }
 
   async getRepos(myfieldn:string):Promise<void>{
@@ -55,6 +56,9 @@ export class AppComponent {
   }
 
   getusername(){
+    if(!this.name.valid){
+      alert("Username is required")
+    }
    let myfieldn = this.name.value
 
    this.getRepos(myfieldn)
@@ -63,6 +67,9 @@ export class AppComponent {
 console.log(myfieldn);
 
    return false;
+  }
+  resetFrom() {
+    
   }
 
 

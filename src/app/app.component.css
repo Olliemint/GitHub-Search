@@ -112,6 +112,9 @@ input{
     
     margin-top: 3%;
 }
+.repoheader h1{
+    color: #ffffff;
+}
 #cardrepo{
     margin: 5px;
     background-color: #0A192F;

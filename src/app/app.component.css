@@ -86,7 +86,7 @@
        /* middle section styling */
  #middle{
         background-color: #121212;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 .repos{
     display: flex;

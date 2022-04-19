@@ -115,6 +115,10 @@ input{
 #cardrepo{
     margin: 5px;
     background-color: #0A192F;
+    transition: all 0.3s ease-in-out;
+}
+#cardrepo:hover{
+    transform: scale(1.1);
 }
 .link a{
     color: #ffffff;

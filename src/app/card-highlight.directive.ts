@@ -7,11 +7,11 @@ export class CardHighlightDirective {
 
   constructor(private elem: ElementRef) { }
   
-  @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('maroon'); 
+  @HostListener('mouseover') onMouseEnter() {
+    this.highlight('#408754'); 
   }
 
-  @HostListener('mouseleave') onMouseLeave() {
+  @HostListener('mouseout') onMouseLeave() {
     this.highlight(null!); 
   }
 
